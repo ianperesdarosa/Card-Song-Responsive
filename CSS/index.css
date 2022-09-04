@@ -5,18 +5,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2? family= Anek+Telugu:wght@100;200;300;400;500;600;700;800 & display=swap');
 @font-face {
-    font-family: ;
-    src: url();
-}
-@font-face {
-    font-family: ;
-    src: url();
+    font-family: "bebas-Neue";
+    src: url(/Fonts/bebas_neue/BebasNeue-Regular.ttf) format("truetype");
 }
 :root{
-    --font1: ;
-
+    --font1: "bebas-Neue" ;
 }
 body{
     background-image: linear-gradient(45deg, #F28F3B, #a14938, #c53f24);
@@ -29,10 +23,79 @@ body{
 main{
     width: 320px;
     height: 568px;
-    background-color: white;
+    background-image: linear-gradient(-45deg,#505050, #6b6b6b, #616161 ); 
     margin-top: 20px;
-    border-radius: 16px;
+    border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.397);
+}
+
+/*Cabeça*/
+#menu{
+    margin: 2px;
+    border-radius: 8px;
+    background-color: black;
+    height: 55px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#menu > .item{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 12px;
+    
+}
+#menu > .item:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 8px;
+}
+/*Corpo*/
+#card{
+    width: auto;
+    height: auto;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.album{
+    display: block;
+    width: 72%;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+section > h2{
+    text-align: center;
+    font-family: var(--font1);
+    margin-top: 25px;
+    color: white;
+    text-shadow: 2px 4px 6px black;
+    line-height: 1.5em;
+}
+/*interações com botoes*/
+#int{
+    background-color: rgba(0, 0, 0, 0.466);
+    height: 75px;
+    margin-top: 55px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.i{
+    display: block;
+}
+#j{
+    display: block;
+    
+}
+.j{
+    display: block;
 }
 
